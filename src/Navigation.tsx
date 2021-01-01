@@ -1,4 +1,4 @@
-import { getTheme, INavStyleProps, INavStyles, IStyleFunctionOrObject, Nav } from "@fluentui/react";
+import { INavStyleProps, INavStyles, IStyleFunctionOrObject, Nav } from "@fluentui/react";
 import React from "react";
 import Links from "./Config";
 
@@ -31,12 +31,10 @@ class Navigation extends React.Component<any, NavigationState> {
             selectedNavKey: document.location.pathname || '/'
         }
 
-        const theme = getTheme();
 
         this.navigationStyles = {
             root: {
-                height: '100vh',
-                backgroundColor: theme.palette.white,
+                height: '100vh'
             },
             link: {
                 borderRadius: '0px'

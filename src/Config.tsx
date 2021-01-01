@@ -1,3 +1,5 @@
+import RestExample from "./RestExample";
+
 type Link = {
     displayName: string,
     icon?: string,
@@ -35,6 +37,12 @@ const Links: Link[] = [
         url: '/settings',
         icon: 'Settings',
         component: () => (<div>Settings</div>)
+    },
+    {
+        displayName: 'Rest Example',
+        url: '/rest-example',
+        icon: 'AzureAPIManagement',
+        component: <RestExample />
     }
 ]
 

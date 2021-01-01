@@ -1,7 +1,6 @@
 import Navigation from "./Navigation";
 import 'office-ui-fabric-react/dist/css/fabric.css';
 import './App.css'
-import React from "react";
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
 import Links from "./Config";
 
@@ -14,11 +13,11 @@ function App() {
             <Navigation />
           </div>
           <div className="main-element ms-Grid-col ms-sm8 ms-lg9 ms-xl10">
-              <Switch>
-                {Links.map((link) => (
-                  <Route exact path={link.url} key={link.url}>{link.component}</Route>
-                ))}
-              </Switch>
+            <Switch>
+              {Links.map((link) => (
+                <Route exact path={link.url} key={link.url}>{link.component}</Route>
+              ))}
+            </Switch>
           </div>
         </div>
       </div>

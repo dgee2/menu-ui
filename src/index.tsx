@@ -5,7 +5,8 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 initializeIcons();
-const style:PartialTheme = {
+
+const style: PartialTheme = {
   palette: {
     themePrimary: '#c02327',
     themeLighterAlt: '#fcf4f4',
@@ -29,15 +30,12 @@ const style:PartialTheme = {
     neutralDark: '#201f1e',
     black: '#000000',
     white: '#ffffff'
-  },
-  semanticColors: {
-    bodyBackground: '#edebe9'
   }
 };
 
 ReactDOM.render(
   <React.StrictMode>
-    <ThemeProvider theme={style}>
+    <ThemeProvider theme={style} >
       <App />
     </ThemeProvider>
   </React.StrictMode>,
