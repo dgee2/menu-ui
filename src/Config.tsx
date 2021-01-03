@@ -1,3 +1,5 @@
+import { Text } from "@fluentui/react";
+import React from "react";
 import RestExample from "./RestExample";
 
 type Link = {
@@ -12,31 +14,31 @@ const Links: Link[] = [
         displayName: 'Home',
         url: '/',
         icon: 'Home',
-        component: () => (<div>Hello world</div>)
+        component: <Text>Hello world</Text>
     },
     {
         displayName: 'Stats',
         url: '/stats',
         icon: 'StackedLineChart',
-        component: () => (<div>Statistics</div>)
+        component: <Text>Statistics</Text>
     },
     {
         displayName: 'Transfer',
         url: '/transfer',
         icon: 'SwitcherStartEnd',
-        component: () => (<div>Transfer</div>)
+        component: <Text>Transfer</Text>
     },
     {
         displayName: 'Users',
         url: '/users',
         icon: 'PlayerSettings',
-        component: () => (<div>Users</div>)
+        component: <Text>Users</Text>
     },
     {
         displayName: 'Settings',
         url: '/settings',
         icon: 'Settings',
-        component: () => (<div>Settings</div>)
+        component: <Text>Settings</Text>
     },
     {
         displayName: 'Rest Example',

@@ -15,7 +15,10 @@ function App() {
           <div className="main-element ms-Grid-col ms-sm8 ms-lg9 ms-xl10">
             <Switch>
               {Links.map((link) => (
-                <Route exact path={link.url} key={link.url}>{link.component}</Route>
+                <Route exact path={link.url} key={link.url}>
+                      <h1>{link.displayName}</h1>
+                      {link.component}
+                </Route>
               ))}
             </Switch>
           </div>
