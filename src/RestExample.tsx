@@ -1,4 +1,4 @@
-import { DetailsListLayoutMode, IColumn, ShimmeredDetailsList } from "@fluentui/react";
+import { DetailsListLayoutMode, IColumn, Link, ShimmeredDetailsList } from "@fluentui/react";
 import React from "react";
 
 interface IRestExampleState {
@@ -12,8 +12,9 @@ function sleep(ms: number) {
 
 class RestExample extends React.Component<{}, IRestExampleState> {
     private _columns: IColumn[] = [
-        { key: 'column1', name: 'Name', fieldName: 'title', minWidth: 50, maxWidth: 300, isResizable: true },
-        { key: 'column2', name: 'Url', fieldName: 'url', minWidth: 50, maxWidth: 300, isResizable: true },
+        { key: 'column2', name: 'Name', minWidth: 50, maxWidth: 1000, isResizable: true, onRender: item => (
+            <Link href={item.url}>{item.title}</Link>
+        )},
         { key: 'points', name: 'Points', fieldName: 'points', minWidth: 50, maxWidth: 55, isResizable: true }
     ];
 
