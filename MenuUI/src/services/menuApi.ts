@@ -7,5 +7,5 @@ fetcher.configure({
   baseUrl:"https://localhost:44347"
 })
 
-export const getRecipes = fetcher.path("/api/Recipe").method("get").create();
+export const getRecipes = fetcher.path("/api/recipe").method("get").create();
 export type Recipe = components["schemas"]["Recipe"];
