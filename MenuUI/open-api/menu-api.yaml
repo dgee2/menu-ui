@@ -132,7 +132,15 @@ components:
         units:
           type: array
           items:
-            $ref: '#/components/schemas/StringStringValueTuple'
+            $ref: '#/components/schemas/IngredientUnit'
+      additionalProperties: false
+    IngredientUnit:
+      type: object
+      properties:
+        name:
+          type: string
+        abbreviation:
+          type: string
       additionalProperties: false
     NewRecipe:
       type: object
@@ -163,7 +171,4 @@ components:
         amount:
           type: number
           format: double
-      additionalProperties: false
-    StringStringValueTuple:
-      type: object
       additionalProperties: false
