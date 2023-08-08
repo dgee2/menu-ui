@@ -4,8 +4,9 @@ import { Fetcher } from "@qdrant/openapi-typescript-fetch"
 const fetcher = Fetcher.for<paths>()
 
 fetcher.configure({
-  baseUrl:"https://localhost:44347"
+  baseUrl: "https://localhost:44347"
 })
 
-export const getRecipes = fetcher.path("/api/recipe").method("get").create();
+const getRecipesInternal = fetcher.path("/api/recipe").method("get").create();
+export const getRecipes = async () => await getRecipesInternal({})
 export type Recipe = components["schemas"]["Recipe"];
