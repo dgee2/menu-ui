@@ -8,8 +8,7 @@
 
 <script setup lang="ts">
 import { Recipe, getRecipes } from "@/services/menuApi";
-import { computed, onMounted } from "vue";
-import { ref } from "vue";
+import { onMounted, ref } from "vue";
 import { VDataTable } from "vuetify/labs/VDataTable";
 
 type UnwrapReadonlyArrayType<A> = A extends Readonly<Array<infer I>>
@@ -21,7 +20,6 @@ type ReadonlyDataTableHeader = UnwrapReadonlyArrayType<
 
 const loading = ref<boolean>(true);
 const recipes = ref<Recipe[]>();
-const data = computed(() => JSON.stringify(recipes.value, null, 4));
 
 const headers: ReadonlyDataTableHeader[] = [
   {
@@ -36,10 +34,8 @@ const headers: ReadonlyDataTableHeader[] = [
 ];
 
 onMounted(async () => {
-  const response = await getRecipes({});
-  recipes.value = response.data;
-  loading.value = false;
+    const response = await getRecipes({});
+    recipes.value = response.data;
+    loading.value = false;
 });
 </script>
-
-<style scoped></style>
