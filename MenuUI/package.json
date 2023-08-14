@@ -21,11 +21,11 @@
   },
   "devDependencies": {
     "@babel/types": "^7.22.10",
-    "@types/node": "^18.17.4",
+    "@types/node": "^18.17.5",
     "@types/webfontloader": "^1.6.35",
     "@vitejs/plugin-vue": "^4.2.3",
     "@vue/eslint-config-typescript": "^11.0.0",
-    "eslint": "^8.46.0",
+    "eslint": "^8.47.0",
     "eslint-plugin-vue": "^9.17.0",
     "openapi-typescript": "^6.4.5",
     "typescript": "^5.1.6",
