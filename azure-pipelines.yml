@@ -15,8 +15,7 @@ stages:
       - job:
         displayName: Build Vue Component
         variables:
-          componentDirectory: '$(Build.SourcesDirectory)/MenuUI'
-          YARN_CACHE_FOLDER: $(Pipeline.Workspace)/.yarn
+          componentDirectory: '$(Build.SourcesDirectory)'
         steps:
         - task: Cache@2
           inputs:
@@ -24,8 +23,8 @@ stages:
             restoreKeys: |
                 yarn | "$(Agent.OS)"
                 yarn
-            path: $(YARN_CACHE_FOLDER)
-          displayName: Cache Yarn packages
+            path: '$(Build.SourcesDirectory)/node_modules'
+          displayName: Cache packages
         - task: CmdLine@2
           displayName: 'yarn install'
           inputs:
