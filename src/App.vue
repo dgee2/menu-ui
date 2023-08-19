@@ -2,20 +2,12 @@
   <v-app>
     <v-app-bar flat>
       <v-container class="fill-height d-flex align-center">
-        <v-btn to="/">
-          <v-icon icon="mdi-home" />
-        </v-btn>
-        <v-btn variant="text" to="/recipes">Recipes</v-btn>
+        <v-btn :to="{ name: 'Home' }" icon="mdi-home" />
+        <v-btn variant="text" :to="{ name: 'Recipes' }">Recipes</v-btn>
 
         <v-spacer></v-spacer>
 
-        <v-responsive max-width="260">
-          <v-text-field
-            density="compact"
-            hide-details
-            variant="solo"
-          ></v-text-field>
-        </v-responsive>
+        <v-btn :to="{ name: 'CreateRecipe' }" icon="mdi-plus" />
       </v-container>
     </v-app-bar>
     <v-main>
