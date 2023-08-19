@@ -19,10 +19,10 @@ stages:
         steps:
         - task: Cache@2
           inputs:
-            key: 'node_modules | "$(Agent.OS)" | **/yarn.lock'
+            key: '"node_modules" | "$(Agent.OS)" | yarn.lock'
             restoreKeys: |
-              node_modules | "$(Agent.OS)"
-              node_modules
+              "node_modules" | "$(Agent.OS)"
+              "node_modules"
             path: '$(componentDirectory)/node_modules'
           displayName: Cache packages
         - task: CmdLine@2
