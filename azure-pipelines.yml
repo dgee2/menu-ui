@@ -19,7 +19,7 @@ stages:
         steps:
         - task: Cache@2
           inputs:
-            key: 'yarn | "$(Agent.OS)" | **/MenuUI/yarn.lock'
+            key: 'yarn | "$(Agent.OS)" | **/yarn.lock'
             restoreKeys: |
                 yarn | "$(Agent.OS)"
                 yarn
