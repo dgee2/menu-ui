@@ -233,10 +233,10 @@
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.12.tgz#d70faba7039d5fca54c83c7dbab41051d2b6f6cb"
   integrity sha512-Hr5Jfhc9eYOQNPYO5WLDq/n4jqijdHNlDXjuAQkkt+mWdQR+XJToOHrsD4cPaMXpn6KO7y2+wM8AZEs8VpBLVA==
 
-"@types/node@^20.5.1":
-  version "20.5.1"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.1.tgz#178d58ee7e4834152b0e8b4d30cbfab578b9bb30"
-  integrity sha512-4tT2UrL5LBqDwoed9wZ6N3umC4Yhz3W3FloMmiiG4JwmUJWpie0c7lcnUNd4gtMKuDEO4wRVS8B6Xa0uMRsMKg==
+"@types/node@^20.5.2":
+  version "20.5.2"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-20.5.2.tgz#02850ed821c8113fd6ed9ae5c744b7f7cd6d6f51"
+  integrity sha512-5j/lXt7unfPOUlrKC34HIaedONleyLtwkKggiD/0uuMfT8gg2EOpg0dz4lCD15Ga7muC+1WzJZAjIB9simWd6Q==
 
 "@types/semver@^7.3.12":
   version "7.5.0"
@@ -332,10 +332,10 @@
     "@typescript-eslint/types" "5.62.0"
     eslint-visitor-keys "^3.3.0"
 
-"@vitejs/plugin-vue@^4.3.2":
-  version "4.3.2"
-  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.3.2.tgz#9f1b693d56370c5c01c3a2a09858bb5afd9d154d"
-  integrity sha512-iDDhGruwhKkwNwT5qgtGaeTxF4ULs52xpQbsC27F01kf3aQBHtrDP738pmHw4oclVAUA3m+Vk8gxhDV5KbfM+A==
+"@vitejs/plugin-vue@^4.3.3":
+  version "4.3.3"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-vue/-/plugin-vue-4.3.3.tgz#3b2337f64495f95cfea5b1497d2d3f4a0b3382b2"
+  integrity sha512-ssxyhIAZqB0TrpUg6R0cBpCuMk9jTIlO1GNSKKQD6S8VjnXi6JXKfUXjSsxey9IwQiaRGsO1WnW9Rkl1L6AJVw==
 
 "@volar/language-core@1.10.1", "@volar/language-core@~1.10.0":
   version "1.10.1"
@@ -1165,10 +1165,10 @@ once@^1.3.0:
   dependencies:
     wrappy "1"
 
-openapi-typescript@^6.5.2:
-  version "6.5.2"
-  resolved "https://registry.yarnpkg.com/openapi-typescript/-/openapi-typescript-6.5.2.tgz#622e54e6de25bd65c65a1f129be42193160e6e42"
-  integrity sha512-Zz41utYZ3BAyr32QhOATSnN9zcWMsJeA4Jdq7xQjfYOdZbQfI8Fvsvx41Doe9Wvoho1aj5cP9b5Z7kHtG6mYvg==
+openapi-typescript@^6.5.3:
+  version "6.5.3"
+  resolved "https://registry.yarnpkg.com/openapi-typescript/-/openapi-typescript-6.5.3.tgz#8dc5e5e7f4e07ecdfb917a4ea2548d26f94bd54d"
+  integrity sha512-iVOgf1wf/6R73Cg9wcxMAD/P3+/TJ8HQruLyv3WRDu29Pwnmp7ZUJ897Kb401jW7Ao/L4JjisropHQJW62BXtA==
   dependencies:
     ansi-colors "^4.1.3"
     fast-glob "^3.3.1"
