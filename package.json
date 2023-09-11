@@ -20,12 +20,12 @@
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
-    "@babel/types": "^7.22.15",
+    "@babel/types": "^7.22.17",
     "@types/node": "^20.5.1",
     "@types/webfontloader": "^1.6.35",
     "@vitejs/plugin-vue": "^4.3.4",
     "@vue/eslint-config-typescript": "^11.0.0",
-    "eslint": "^8.48.0",
+    "eslint": "^8.49.0",
     "eslint-plugin-vue": "^9.17.0",
     "openapi-typescript": "^6.5.5",
     "typescript": "^5.2.2",
