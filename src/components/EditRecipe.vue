@@ -3,7 +3,7 @@
     <v-text-field
       :value="title"
       @update:modelValue="(value) => $emit('update:title', value)"
-      :rules="recipeRules"
+      :rules="[required('Title'), maxLength(500, 'Title')]"
       label="Title"
       required
     />
@@ -15,8 +15,10 @@
 import { ref } from "vue";
 import { SubmitEventPromise } from "vuetify/lib/framework.mjs";
 import { NewRecipe } from "@/services/menuApi";
+import { required, maxLength } from "@/services/validationRules";
 
 const valid = ref(true);
+const saving = ref(false);
 
 const recipeRules = [
   (value: any) => {
@@ -42,12 +44,11 @@ const props = defineProps<{
 }>();
 
 async function save(event: SubmitEventPromise) {
-  await event;
+  const validationResult = await event;
+  if (!validationResult.valid) return;
   emits("save", {
     name: props.title,
     ingredients: []
   });
 }
 </script>
-
-<style scoped></style>
