@@ -20,7 +20,6 @@ const saving = ref(false);
 
 const recipe = ref({
   title: "",
-  title2: "",
 });
 
 const submit = async (event: SubmitEventPromise) => {
