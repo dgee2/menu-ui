@@ -109,12 +109,17 @@ paths:
 components:
   schemas:
     FullRecipe:
+      required:
+        - id
+        - ingredients
+        - name
       type: object
       properties:
         id:
           type: integer
           format: int32
         name:
+          minLength: 1
           type: string
         ingredients:
           type: array
@@ -122,12 +127,17 @@ components:
             $ref: '#/components/schemas/RecipeIngredient'
       additionalProperties: false
     Ingredient:
+      required:
+        - id
+        - name
+        - units
       type: object
       properties:
         id:
           type: integer
           format: int32
         name:
+          minLength: 1
           type: string
         units:
           type: array
@@ -135,14 +145,22 @@ components:
             $ref: '#/components/schemas/IngredientUnit'
       additionalProperties: false
     IngredientUnit:
+      required:
+        - abbreviation
+        - name
       type: object
       properties:
         name:
+          minLength: 1
           type: string
         abbreviation:
+          minLength: 1
           type: string
       additionalProperties: false
     NewRecipe:
+      required:
+        - ingredients
+        - name
       type: object
       properties:
         ingredients:
@@ -150,23 +168,34 @@ components:
           items:
             $ref: '#/components/schemas/RecipeIngredient'
         name:
+          minLength: 1
           type: string
       additionalProperties: false
     Recipe:
+      required:
+        - id
+        - name
       type: object
       properties:
         id:
           type: integer
           format: int32
         name:
+          minLength: 1
           type: string
       additionalProperties: false
     RecipeIngredient:
+      required:
+        - amount
+        - name
+        - unit
       type: object
       properties:
         name:
+          minLength: 1
           type: string
         unit:
+          minLength: 1
           type: string
         amount:
           type: number
