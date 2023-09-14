@@ -1,34 +1,30 @@
 <template>
-  <v-form v-model="valid">
+  <v-form v-model="valid" @submit.prevent="submit">
     <v-text-field
       v-model="recipe.title"
-      :rules="recipeRules"
+      :rules="[required('Title'), maxLength(500, 'Title')]"
       label="Title"
       required
     />
+    <v-btn :loading="saving" type="submit" text="Submit"></v-btn>
   </v-form>
 </template>
 
 <script setup lang="ts">
 import { ref } from "vue";
+import { required, maxLength } from "@/services/validationRules";
+import { SubmitEventPromise } from "vuetify/lib/framework.mjs";
 
 const valid = ref(true);
+const saving = ref(false);
 
 const recipe = ref({
   title: "",
+  title2: "",
 });
-const recipeRules = [
-  (value: any) => {
-    if (value) return true;
 
-    return "Recipe title is required.";
-  },
-  (value: string | any[]) => {
-    if (value?.length <= 10) return true;
-
-    return "Recipe title must be less than 10 characters.";
-  },
-];
+const submit = async (event: SubmitEventPromise) => {
+  const validationResult = await event;
+  if (!validationResult.valid) return;
+};
 </script>
-
-<style scoped></style>
