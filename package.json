@@ -7,7 +7,7 @@
     "preview": "yarn run build-prerequisites && vite preview",
     "build-prerequisites":"yarn run generate-openapi && vue-tsc --noEmit ",
     "lint": "eslint . --fix --ignore-path .gitignore",
-    "generate-openapi": "openapi-typescript ./open-api/*.yaml --output ./src/generated/open-api/"
+    "generate-openapi": "openapi-typescript ./open-api/*.yaml --output ./src/generated/"
   },
   "dependencies": {
     "@mdi/font": "^7.0.0",
