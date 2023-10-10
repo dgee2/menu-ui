@@ -10,7 +10,7 @@
     "generate-openapi": "openapi-typescript ./open-api/*.yaml --output ./src/generated/"
   },
   "dependencies": {
-    "@mdi/font": "^7.0.0",
+    "@mdi/font": "^7.3.67",
     "@qdrant/openapi-typescript-fetch": "^1.2.1",
     "pinia": "^2.1.6",
     "roboto-fontface": "*",
