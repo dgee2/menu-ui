@@ -5,9 +5,11 @@
     "dev": "yarn run build-prerequisites && vite",
     "build": "yarn run build-prerequisites && vite build",
     "preview": "yarn run build-prerequisites && vite preview",
-    "build-prerequisites":"yarn run generate-openapi && vue-tsc --noEmit ",
+    "build-prerequisites": "yarn run generate-openapi && vue-tsc --noEmit",
     "lint": "eslint . --fix --ignore-path .gitignore",
-    "generate-openapi": "openapi-typescript ./open-api/*.yaml --output ./src/generated/"
+    "generate-openapi": "openapi-typescript ./open-api/*.yaml --output ./src/generated/",
+    "test": "vitest",
+    "dev-test": "vitest --ui"
   },
   "dependencies": {
     "@mdi/font": "^7.3.67",
@@ -24,13 +26,17 @@
     "@types/node": "^20.5.1",
     "@types/webfontloader": "^1.6.35",
     "@vitejs/plugin-vue": "^4.4.0",
+    "@vitest/ui": "^0.34.6",
     "@vue/eslint-config-typescript": "^12.0.0",
+    "@vue/test-utils": "^2.4.1",
     "eslint": "^8.51.0",
     "eslint-plugin-vue": "^9.17.0",
+    "jsdom": "^22.1.0",
     "openapi-typescript": "^6.7.0",
     "typescript": "^5.2.2",
     "vite": "^4.4.11",
     "vite-plugin-vuetify": "^1.0.0",
+    "vitest": "^0.34.6",
     "vue-tsc": "^1.8.18"
   }
 }
