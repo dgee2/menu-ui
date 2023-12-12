@@ -15,5 +15,3 @@ const handleClick = () => {
   emit("increment", { count: count.value, isEven: count.value % 2 === 0 });
 };
 </script>
-
-<style scoped></style>

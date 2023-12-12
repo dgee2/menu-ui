@@ -15,5 +15,3 @@ const handleClick = () => {
   emit("increment", count.value);
 };
 </script>
-
-<style scoped></style>
