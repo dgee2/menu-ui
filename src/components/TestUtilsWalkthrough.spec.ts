@@ -74,18 +74,3 @@ describe("NavShouldShowDropdown", () => {
     expect(wrapper.get("#user-dropdown").isVisible()).toBe(false);
   });
 });
-
-const Counter = {
-  template: '<button @click="handleClick">Increment</button>',
-  data() {
-    return {
-      count: 0
-    }
-  },
-  methods: {
-    handleClick() {
-      this.count += 1
-      this.$emit('increment', this.count)
-    }
-  }
-}
