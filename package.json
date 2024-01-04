@@ -12,20 +12,20 @@
     "dev-test": "vitest --ui"
   },
   "dependencies": {
-    "@mdi/font": "^7.3.67",
+    "@mdi/font": "^7.4.47",
     "@qdrant/openapi-typescript-fetch": "^1.2.1",
     "pinia": "^2.1.7",
     "roboto-fontface": "*",
-    "vue": "^3.3.12",
+    "vue": "^3.4.5",
     "vue-router": "^4.2.5",
-    "vuetify": "^3.4.7",
+    "vuetify": "^3.4.9",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
     "@babel/types": "^7.23.6",
     "@types/node": "^20.5.1",
     "@types/webfontloader": "^1.6.38",
-    "@vitejs/plugin-vue": "^4.5.2",
+    "@vitejs/plugin-vue": "^5.0.2",
     "@vitest/ui": "^0.34.6",
     "@vue/eslint-config-typescript": "^12.0.0",
     "@vue/test-utils": "^2.4.1",
@@ -37,6 +37,6 @@
     "vite": "^5.0.10",
     "vite-plugin-vuetify": "^2.0.1",
     "vitest": "^0.34.6",
-    "vue-tsc": "^1.8.25"
+    "vue-tsc": "^1.8.27"
   }
 }
