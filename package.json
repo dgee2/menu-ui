@@ -29,14 +29,14 @@
     "@vitest/ui": "^1.4.0",
     "@vue/eslint-config-typescript": "^13.0.0",
     "@vue/test-utils": "^2.4.5",
-    "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.24.0",
+    "eslint": "^9.0.0",
+    "eslint-plugin-vue": "^9.24.1",
     "jsdom": "^24.0.0",
     "openapi-typescript": "^6.7.5",
     "typescript": "^5.4.4",
     "vite": "^5.2.8",
     "vite-plugin-vuetify": "^2.0.3",
     "vitest": "^1.4.0",
-    "vue-tsc": "^2.0.10"
+    "vue-tsc": "^2.0.11"
   }
 }
