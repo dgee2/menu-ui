@@ -16,7 +16,7 @@
     "@qdrant/openapi-typescript-fetch": "^1.2.6",
     "pinia": "^2.1.7",
     "roboto-fontface": "*",
-    "vue": "^3.4.25",
+    "vue": "^3.4.26",
     "vue-router": "^4.3.2",
     "vuetify": "^3.5.17",
     "webfontloader": "^1.0.0"
