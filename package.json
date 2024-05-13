@@ -37,6 +37,6 @@
     "vite": "^5.2.11",
     "vite-plugin-vuetify": "^2.0.3",
     "vitest": "^1.6.0",
-    "vue-tsc": "^2.0.16"
+    "vue-tsc": "^2.0.17"
   }
 }
