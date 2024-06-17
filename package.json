@@ -16,9 +16,9 @@
     "@qdrant/openapi-typescript-fetch": "^1.2.6",
     "pinia": "^2.1.7",
     "roboto-fontface": "*",
-    "vue": "^3.4.27",
+    "vue": "^3.4.28",
     "vue-router": "^4.3.3",
-    "vuetify": "^3.6.8",
+    "vuetify": "^3.6.9",
     "webfontloader": "^1.0.0"
   },
   "devDependencies": {
@@ -34,7 +34,7 @@
     "jsdom": "^24.1.0",
     "openapi-typescript": "^6.7.6",
     "typescript": "^5.4.5",
-    "vite": "^5.2.13",
+    "vite": "^5.3.1",
     "vite-plugin-vuetify": "^2.0.3",
     "vitest": "^1.6.0",
     "vue-tsc": "^2.0.21"
