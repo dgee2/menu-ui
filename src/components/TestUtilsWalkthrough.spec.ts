@@ -71,6 +71,6 @@ describe("NavShouldShowDropdown", () => {
   it("does not show the user dropdown", () => {
     const wrapper = mount(NavShouldShowDropdown);
 
-    expect(wrapper.get("#user-dropdown").isVisible()).toBe(false);
+    expect(wrapper.get("#user-dropdown").isVisible()).toBeFalsy();
   });
 });
